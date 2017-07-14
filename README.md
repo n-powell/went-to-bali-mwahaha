@@ -24,13 +24,23 @@ To set up:
 
 * _Open your browser and enter `localhost:3000` as the URL path._
 --
-* `log-in:`
+## log-in:
 * `admin user: admin@gmail.com`
 * `password: passwordpassword` <-- sorry. 10 char min.
 --
 ## Known Bugs
 
 _Many as of now. ..working on it._
+
+
+## Tech
+* Ruby/Rails
+* Bcrypt
+* Paperclip
+* Faker
+* Turbolinks
+* Materialize
+* HTML
 
 ## Fixes to begin
 * ---√ needs work
