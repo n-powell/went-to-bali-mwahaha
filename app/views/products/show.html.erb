@@ -10,3 +10,9 @@
     <% end %>
   </div>
 </div>
+
+<div class="">
+  <%if current_user && current_user.admin %>
+    <%= link_to "Edit product", edit_product_path(@product)%>
+  <% end %>
+</div>

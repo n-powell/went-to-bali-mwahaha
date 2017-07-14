@@ -25,16 +25,21 @@ class ProductsController < ApplicationController
     @order_item = current_order.order_items.new
   end
 
+  def edit
+    @user = current_user
+    @product = Product.find(params[:id])
+  end
+
   def update
-      @product = Product.find(params[:id])
-      if @product.update(product_params)
-        flash[:notice] = "Product successfully updated!"
-        redirect_to products_path
-      else
-        flash[:alert] = "Sorry product not successfully updated!"
-        render :edit
-      end
+    @product = Product.find(params[:id])
+    if @product.update(product_params)
+      flash[:notice] = "Product successfully updated!"
+      redirect_to products_path
+    else
+      flash[:alert] = "Sorry product not successfully updated!"
+      render :edit
     end
+  end
 
   private
   def product_params
