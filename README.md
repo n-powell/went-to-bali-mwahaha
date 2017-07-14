@@ -25,9 +25,9 @@ _Many as of now. ..working on it._
 
 ## Fixes to begin
 
-* Add products using AJAX
+* Add products using AJAX ---√√√ turbolinks
 * Click on product to hide show details
-* Remove items from shopping cart without page reload
+* Remove items from shopping cart without page reload --√√√ turbolinks
 
 * Ensure that users can't order a negative number of items.---√√√
 * Add flash messages for signing up, signing in and signing out. ---√√√
