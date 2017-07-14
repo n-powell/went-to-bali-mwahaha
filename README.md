@@ -23,19 +23,22 @@ To set up:
 * `$ rails server`
 
 * _Open your browser and enter `localhost:3000` as the URL path._
-
+--
+* `log-in:`
 * `admin user: admin@gmail.com`
 * `password: passwordpassword` <-- sorry. 10 char min.
-
+--
 ## Known Bugs
 
 _Many as of now. ..working on it._
 
 ## Fixes to begin
-
-* Add products using AJAX ---√√√ turbolinks
-* Click on product to hide show details---√√√ turbo-links
-* Remove items from shopping cart without page reload --√√√ turbolinks
+* ---√ needs work
+* ---√√√ complete
+*
+* Add products using AJAX ---√ turbolinks
+* Click on product to hide show details---√ turbo-links
+* Remove items from shopping cart without page reload --√ turbolinks
 
 * Ensure that users can't order a negative number of items.---√√√
 * Add flash messages for signing up, signing in and signing out. ---√√√
