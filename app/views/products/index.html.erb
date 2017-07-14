@@ -1,21 +1,23 @@
 <h3>Products</h3>
-
-<div class="row">
-  <div class="section">
-  <% @products.each do |product| %>
-    <div class="col s4">
-      <%= link_to(product_path(product)) do %>
-      <%= image_tag product.avatar.url(:medium) %>
-        <h4><%= product.name %></h4>
-      <% end %>
-      <p><%= product.description %></p>
-      <p><%= number_to_currency product.price %></p>
-      <%= form_for @order_item, remote: true do |f| %>
-        <%= f.hidden_field :product_id, value: product.id %>
-        <%= f.number_field :quantity, placeholder: "Quantity" %>
-        <span class="waves-effect waves-light btn"><%= f.submit "Add to cart" %></span>
+<div class="table">
+  <div class="row">
+    <div class="section">
+      <% @products.each do |product| %>
+        <div class="col s4">
+          <%= link_to(product_path(product)) do %>
+          <%= image_tag product.avatar.url(:medium) %>
+          <h4><%= product.name %></h4>
+          <% end %>
+          <p><%= product.description %></p>
+          <p><%= number_to_currency product.price %></p>
+          <%= form_for @order_item, remote: true do |f| %>
+          <%= f.hidden_field :product_id, value: product.id %>
+          <%= f.number_field :quantity, placeholder: "Quantity" %>
+          <span class="waves-effect waves-light btn"><%= f.submit "Add to cart" %></span>
+          <% end %>
+        </div>
       <% end %>
     </div>
-  <% end %>
-</div>
+  </div>
+
 </div>
