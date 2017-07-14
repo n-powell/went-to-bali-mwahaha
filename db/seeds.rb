@@ -3,6 +3,7 @@ class Seed
   def self.begin
     seed = Seed.new
     seed.generate_products
+    seed.generate_users
   end
 
   def generate_products
@@ -13,7 +14,7 @@ class Seed
 
   def generate_users
     1.times do |i|
-      User.create!(name: "admin", email: "admin@gmail.com", password_digest: "pass")
+      User.create!(name: "admin", email: "admin@gmail.com", password: "passwordpassword", admin: true)
     end
   end
 end
