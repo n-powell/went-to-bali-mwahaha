@@ -10,7 +10,7 @@ _A left behind project with a lot of issues._
 
 _This is a e-commerce site for a variety of products. Users can view products and add them to their cart session. Admins can create, read, update, and delete products._
 
-_**Update** Paperclip is now being used for file upload. This attribute is now required for new product creation, as it validates upon new product create. Please have image ready if you are inputting new product._
+_**Update** 7/14/17 Paperclip is now being used for file upload. This attribute is now required for new product creation, as it validates upon new product create. Please have image ready if you are inputting new product._
 
 
 E-commerce site. Uses `bcrypt` and `materialize`.
@@ -19,6 +19,7 @@ To set up:
 
 * `navigate to cloned folder`
 * `$ bundle install`
+* `$ postgres`
 * `$ rake db:setup`
 * `$ rails server`
 
@@ -40,9 +41,10 @@ _Many as of now. ..working on it._
 * Faker
 * Turbolinks
 * Materialize
+* postgresql
 * HTML
 
-## Fixes to begin
+## Fixes
 * ---√ needs work
 * ---√√√ complete
 *
