@@ -9,6 +9,7 @@ class UsersController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/'
     else
+      flash[:alert] = "Could not create user. Please ensure all feilds are complete and password is more than 10 characters!"
       redirect_to '/sign_up'
     end
   end
