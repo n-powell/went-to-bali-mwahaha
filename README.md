@@ -6,9 +6,11 @@
 
 ## Description
 
+_A left behind project with a lot of issues._
+
 _This is a e-commerce site for a variety of products. Users can view products and add them to their cart session. Admins can create, read, update, and delete products._
 
-_Update. Paperclip is now being used for file upload. This attribute is now required for new product creation, as it validates upon new product create. Please have image ready if you are inputting new product._
+_**Update** Paperclip is now being used for file upload. This attribute is now required for new product creation, as it validates upon new product create. Please have image ready if you are inputting new product._
 
 
 E-commerce site. Uses `bcrypt` and `materialize`.
@@ -20,7 +22,10 @@ To set up:
 * `$ rake db:setup`
 * `$ rails server`
 
-* * _Open your browser and enter `localhost:3000` as the URL path._
+* _Open your browser and enter `localhost:3000` as the URL path._
+
+* `admin user: admin@gmail.com`
+* `password: passwordpassword` <-- sorry. 10 char min.
 
 ## Known Bugs
 
