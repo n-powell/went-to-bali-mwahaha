@@ -8,6 +8,9 @@
 
 _This is a e-commerce site for a variety of products. Users can view products and add them to their cart session. Admins can create, read, update, and delete products._
 
+_Update. Paperclip is now being used for file upload. This attribute is now required for new product creation, as it validates upon new product create. Please have image ready if you are inputting new product._
+
+
 E-commerce site. Uses `bcrypt` and `materialize`.
 
 To set up:
@@ -26,15 +29,15 @@ _Many as of now. ..working on it._
 ## Fixes to begin
 
 * Add products using AJAX ---√√√ turbolinks
-* Click on product to hide show details
+* Click on product to hide show details---√√√ turbo-links
 * Remove items from shopping cart without page reload --√√√ turbolinks
 
 * Ensure that users can't order a negative number of items.---√√√
 * Add flash messages for signing up, signing in and signing out. ---√√√
 * Add product update and delete functionality for admins. ---√√√
 * Add admin flash messages for adding, updating and deleting products. ---√√√
-* Add Paperclip for product image upload.
-* Allow other than whole dollar amounts for admin product creation (for instance, 3.99).
+* Add Paperclip for product image upload. ---√√√
+* Allow other than whole dollar amounts for admin product creation (for instance, 3.99). ---√√√
 * Add product validations. ---√√√
 * Add Stripe so users can pay when finalizing orders.
 * Add password validations to ensure a user's password is sufficiently complex.---√√√
