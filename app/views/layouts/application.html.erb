@@ -9,6 +9,11 @@
   </head>
   <nav>
     <div class="nav-wrapper">
+      <% if current_user && current_user.admin %>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><%= link_to "Add Product", new_product_path %></li>
+        </ul>
+      <% end %>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><%= link_to "Cart | Total items: #{ cart_items }", cart_path %></li>
         <li><%= link_to "See all products", products_path %></li>
@@ -22,6 +27,11 @@
       </ul>
     </div>
   </nav>
+
+
+  <% if current_user && current_user.admin %>
+    <%= link_to "Add Product", new_product_path %>
+  <% end %>
 
   <body>
     <!-- <% flash.each do |name, msg| %>
