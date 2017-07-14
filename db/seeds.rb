@@ -10,6 +10,12 @@ class Seed
       Product.create!(name: Faker::Lorem.word, price: rand(10...100), description: Faker::Lorem.sentence(5, false, 0).chop)
     end
   end
+
+  def generate_users
+    1.times do |i|
+      User.create!(name: "admin", email: "admin@gmail.com", password_digest: "pass")
+    end
+  end
 end
 
 Seed.begin
