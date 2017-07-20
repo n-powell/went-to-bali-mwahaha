@@ -13,8 +13,6 @@ _This is a e-commerce site for a variety of products. Users can view products an
 _**Update** 7/14/17 Paperclip is now being used for file upload. This attribute is now required for new product creation, as it validates upon new product create. Please have image ready if you are inputting new product._
 
 
-E-commerce site. Uses `bcrypt` and `materialize`.
-
 To set up:
 
 * `navigate to cloned folder`

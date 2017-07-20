@@ -4,7 +4,7 @@
     <div class="section">
       <% @products.each do |product| %>
         <div class="col s4">
-          <%= link_to(product_path(product)) do %>
+          <%= link_to (product_path(product)), remote: true do %>
           <%= image_tag product.avatar.url(:medium) %>
           <h4><%= product.name %></h4>
           <% end %>

@@ -1,4 +1,6 @@
-<div class="">
+<div class="details">
+  <br>
+  <p class="btn" id="hide-details">Hide Details</p>
   <h1><%= @product.name %></h1>
   <h3><%= number_to_currency @product.price %></h3>
   <p><%= @product.description %></p>
@@ -9,4 +11,17 @@
     <%= f.submit "Add to cart" %>
     <% end %>
   </div>
+</div>
+
+<div class="">
+  <%if current_user && current_user.admin %>
+    <%= link_to "Edit product", edit_product_path(@product)%>
+    <br>
+    <%= link_to "Delete product", product_path(@product), method: "delete" %>
+  <% end %>
+
+  <br>
+  <br>
+  <br>
+  <br>
 </div>
